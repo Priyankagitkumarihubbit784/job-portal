@@ -302,11 +302,11 @@ function Dashboard({ setPage }) {
                 Loading jobs...
               </div>
 
-            ) : jobs.length > 0 ? (
+            ) : (jobs || []).length > 0 ? (
 
               <div className="row">
 
-                {jobs.map((job) => (
+                {(jobs || []).map((job) => (
 
                   <div
                     className="col-md-6 mb-4"
