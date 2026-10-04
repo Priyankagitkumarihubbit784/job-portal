@@ -58,7 +58,7 @@ function RegisterForm({ setPage }) {
       setLoading(true)
 
       const response = await fetch(
-        'https://job-portal-cmf6.onrender.com',
+        'https://job-portal-cmf6.onrender.com/api/auth/register',
         {
           method: 'POST',
           headers: {
