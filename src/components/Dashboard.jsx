@@ -26,7 +26,7 @@ function Dashboard({ setPage }) {
       setLoading(true)
       setError('')
 
-      let url = 'http://localhost:5000/api/jobs'
+      let url = 'https://job-portal-cmf6.onrender.com'
 
       const params = new URLSearchParams()
 
@@ -69,7 +69,7 @@ function Dashboard({ setPage }) {
   const fetchApplications = async () => {
     try {
       const response = await fetch(
-        'http://localhost:5000/api/applications/my',
+        'https://job-portal-cmf6.onrender.com/api/applications/my',
         {
           headers: {
             Authorization: `Bearer ${token}`
@@ -124,7 +124,7 @@ function Dashboard({ setPage }) {
       }
 
       const response = await fetch(
-        'http://localhost:5000/api/applications',
+        'https://job-portal-cmf6.onrender.com/api/applications',
         {
           method: 'POST',
 
