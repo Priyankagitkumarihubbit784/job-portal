@@ -26,7 +26,7 @@ function Dashboard({ setPage }) {
       setLoading(true)
       setError('')
 
-      let url = 'https://job-portal-cmf6.onrender.com'
+      let url = 'https://job-portal-cmf6.onrender.com/api/jobs'
 
       const params = new URLSearchParams()
 
