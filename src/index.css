@@ -1,0 +1,264 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Inter, Arial, sans-serif;
+  background: #f5f7fb;
+  color: #172033;
+}
+
+/* =========================
+   GLOBAL
+========================= */
+
+button,
+input,
+select {
+  font-family: inherit;
+}
+
+.btn-primary {
+  background: #6d5dfc;
+  border-color: #6d5dfc;
+}
+
+.btn-primary:hover {
+  background: #5848e8;
+  border-color: #5848e8;
+}
+
+.btn-outline-primary {
+  color: #6d5dfc;
+  border-color: #6d5dfc;
+}
+
+.btn-outline-primary:hover {
+  background: #6d5dfc;
+  border-color: #6d5dfc;
+}
+
+/* =========================
+   NAVBAR
+========================= */
+
+.navbar {
+  background: #111827 !important;
+  padding: 16px 0;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.08);
+}
+
+.navbar-brand {
+  font-size: 24px;
+  letter-spacing: -0.5px;
+}
+
+.navbar .btn {
+  border-radius: 10px;
+  padding: 8px 20px;
+}
+
+/* =========================
+   CARDS
+========================= */
+
+.card {
+  border: none !important;
+  border-radius: 18px !important;
+  box-shadow: 0 8px 30px rgba(31, 41, 55, 0.08) !important;
+}
+
+.card-body {
+  padding: 28px;
+}
+
+/* =========================
+   FORM PAGES
+========================= */
+
+.container.mt-5 {
+  min-height: calc(100vh - 40px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.container.mt-5 .row {
+  width: 100%;
+}
+
+.container.mt-5 .card {
+  overflow: hidden;
+}
+
+.container.mt-5 .card-body {
+  padding: 42px;
+}
+
+.container.mt-5 h2 {
+  font-size: 32px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.form-label {
+  font-weight: 600;
+  color: #374151;
+}
+
+.form-control,
+.form-select {
+  border: 1px solid #dbe1ea;
+  border-radius: 10px;
+  padding: 12px 14px;
+  background: #fff;
+}
+
+.form-control:focus,
+.form-select:focus {
+  border-color: #6d5dfc;
+  box-shadow: 0 0 0 3px rgba(109, 93, 252, 0.12);
+}
+
+.container.mt-5 .btn-primary {
+  padding: 12px;
+  border-radius: 10px;
+  font-weight: 600;
+}
+
+/* =========================
+   DASHBOARD
+========================= */
+
+.container.mt-4 {
+  max-width: 1200px;
+}
+
+.container.mt-4 > h2 {
+  font-size: 34px;
+  font-weight: 750;
+  margin-top: 30px;
+  color: #111827;
+}
+
+/* Profile */
+
+.container.mt-4 .col-md-4 .card {
+  position: sticky;
+  top: 20px;
+}
+
+.container.mt-4 .col-md-4 .card-title {
+  font-size: 22px;
+  font-weight: 700;
+}
+
+.container.mt-4 .col-md-4 p {
+  color: #4b5563;
+}
+
+.container.mt-4 .col-md-4 strong {
+  color: #111827;
+}
+
+/* Search */
+
+.container.mt-4 .form-control {
+  height: 50px;
+}
+
+.container.mt-4 .form-select {
+  height: 50px;
+}
+
+/* Section titles */
+
+.container.mt-4 h4 {
+  font-weight: 700;
+  color: #111827;
+}
+
+/* =========================
+   JOB CARDS
+========================= */
+
+.container.mt-4 .col-md-6 .card {
+  height: 100%;
+  transition: 0.25s ease;
+}
+
+.container.mt-4 .col-md-6 .card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 14px 35px rgba(31, 41, 55, 0.13) !important;
+}
+
+.container.mt-4 .card-title {
+  font-size: 21px;
+  font-weight: 700;
+  color: #111827;
+}
+
+.container.mt-4 .card-subtitle {
+  color: #6d5dfc !important;
+  font-weight: 600;
+}
+
+.badge.bg-primary {
+  background: #ede9fe !important;
+  color: #5b21b6;
+  padding: 8px 12px;
+  border-radius: 20px;
+  font-weight: 600;
+}
+
+/* =========================
+   ALERTS
+========================= */
+
+.alert {
+  border: none;
+  border-radius: 12px;
+}
+
+/* =========================
+   APPLICATIONS
+========================= */
+
+.container.mt-4 .mt-4 .card {
+  border-left: 4px solid #6d5dfc !important;
+}
+
+.badge.bg-success {
+  background: #dcfce7 !important;
+  color: #166534;
+  padding: 7px 12px;
+  border-radius: 20px;
+}
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 768px) {
+
+  .container.mt-4 {
+    padding: 0 16px;
+  }
+
+  .container.mt-4 > h2 {
+    font-size: 27px;
+  }
+
+  .container.mt-5 .card-body {
+    padding: 28px 22px;
+  }
+
+  .container.mt-4 .col-md-4 .card {
+    position: static;
+  }
+
+  .navbar-brand {
+    font-size: 20px;
+  }
+}
